@@ -11,6 +11,13 @@ function sortear()
         return;
     }
 
+    if (quantidade > (ate - de + 1))
+    {
+        alert('ERRO ENCONTRADO!\n\nCampo "Quantidade" deve ser menor ou igual ao intervalo informado no campo "Do número" até o campo "Até o número".\nTente novamente.');
+
+        return;
+    }
+
     let sorteados = [];
     let numero;
 
